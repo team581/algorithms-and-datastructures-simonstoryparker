@@ -2,6 +2,7 @@ package assignment;
 
 public class App {
 
+  // Time Complexity: O(n)
   public static int get(LinkedList list, int index) {
     var item = list.head;
 
@@ -14,6 +15,7 @@ public class App {
     return item.data;
   }
 
+  // Time Complexity: O(n)
   public static void set(LinkedList list, int index, int value) {
     var item = list.head;
 
@@ -26,6 +28,7 @@ public class App {
     }
   }
 
+  // Time Complexity: O(n)
   public static void remove(LinkedList list, int index) {
     if (index == 0) {
       list.head = list.head.next;
@@ -40,6 +43,7 @@ public class App {
     }
   }
 
+  // Time Complexity: O(n)
   public static LinkedList reverse(LinkedList list) {
     LinkedList reversedList = new LinkedList();
     var item = list.head;
@@ -50,6 +54,7 @@ public class App {
     return reversedList;
   }
 
+  // Time Complexity: O(n)
   public static boolean isSortedAscending(LinkedList list) {
     for (int i = 0; i < list.length() - 1; i++) {
       if (get(list, i) > get(list, i + 1)) {
