@@ -31,7 +31,7 @@ public class App {
       list.head = list.head.next;
     } else {
       var current = list.head;
-      
+
       for (int i = 0; i < index - 1; i++) {
         current = current.next;
       }
